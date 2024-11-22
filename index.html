@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <h1>Memory Game</h1>
+
+        <!-- Keuze voor aantal kaarten -->
+        <label for="card-count">Aantal kaarten:</label>
+        <select id="card-count">
+            <option value="12">12</option>
+            <option value="16">16</option>
+        </select>
+        
+        <!-- Keuze voor tijdslimiet -->
+        <label for="time-limit">Tijdslimiet:</label>
+        <select id="time-limit">
+            <option value="1">1 minuut</option>
+            <option value="2">2 minuten</option>
+            <option value="3">3 minuten</option>
+            <option value="4">4 minuten</option>
+            <option value="5">5 minuten</option>
+        </select>
+
+        <!-- Knop om nieuw spel te starten -->
+        <button id="start-game">Nieuw spel</button>
+
+        <!-- Scorebord -->
+        <div id="score-board">
+            <p>Score: <span id="score">0</span></p>
+            <p>Overige tijd: <span id="timer">00:00</span></p>
+        </div>
+
+        <!-- Game board voor de kaarten -->
+        <div id="game-board"></div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
